@@ -102,6 +102,9 @@
           <excludes>
             <exclude>com/fasterxml/jackson/failing/*.java</exclude>
           </excludes>
+          <systemPropertyVariables>
+            <jackson.deserialization.whitelist.packages>java.io.Serializable,com.fasterxml.jackson.databind,org.springframework.jacksontest.GrantedAuthority,java.util.concurrent.atomic,com.fasterxml.jackson.core,javax.measure.Measure</jackson.deserialization.whitelist.packages>
+          </systemPropertyVariables>
         </configuration>
       </plugin>
 
